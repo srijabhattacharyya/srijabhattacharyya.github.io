@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srija Bhattacharyya | AI Systems & Research</title>
+  <meta name="description" content="Academic & Research Portfolio of Srija Bhattacharyya. B.Tech Computer Science & Engineering at KIIT University (CGPA 9.73/10). Research in General AI, Hallucination Mitigation, RAG, Agentic AI, and Alignment." />
+
+  <!-- Single Unified Font: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            creamBg: '#FAF8F5',
+            pureBlack: '#000000',
+            cardBorder: '#E8E2D8',
+            deepNavy: '#0F2C59',
+            accentBlue: '#1E3A8A',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #000000;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+    ::selection {
+      background-color: #000000;
+      color: #FAF8F5;
+    }
+    .clean-card {
+      background-color: #FFFFFF;
+      border: 1px solid #E8E2D8;
+      border-radius: 16px;
+      transition: border-color 0.15s ease;
+    }
+    .clean-card:hover {
+      border-color: #CBD5E1;
+    }
+  </style>
+</head>
+
+<body class="antialiased min-h-screen text-black">
+
+  <!-- Quiet, Single Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-sm border-b border-[#E8E2D8]">
+    <div class="mx-auto max-w-4xl px-6 py-4 flex items-center justify-between">
+      <a href="#top" class="text-base font-bold tracking-tight text-black hover:opacity-75 transition">
+        Srija Bhattacharyya
+      </a>
+
+      <nav class="flex items-center gap-5 text-sm font-medium text-black">
+        <a href="#about" class="hover:underline underline-offset-4 transition">About</a>
+        <a href="#research" class="hover:underline underline-offset-4 transition">Research</a>
+        <a href="#experience" class="hover:underline underline-offset-4 transition">Experience</a>
+        <a href="#projects" class="hover:underline underline-offset-4 transition">Projects</a>
+        <a href="#courses" class="hover:underline underline-offset-4 transition">Courses</a>
+        <a href="#contact" class="px-3.5 py-1.5 rounded-lg bg-black text-white hover:bg-neutral-800 transition text-xs font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="mx-auto max-w-4xl px-6 py-14 sm:py-20 space-y-24">
+
+    <!-- INTRO & PHILOSOPHY SECTION -->
+    <section id="about" class="space-y-10">
+      
+      <!-- Profile Header (Circular Photo & Crisp Black Text) -->
+      <div class="flex flex-col sm:flex-row items-start gap-7 sm:gap-9">
+        <div class="shrink-0">
+          <div class="h-32 w-32 sm:h-36 sm:w-36 rounded-full overflow-hidden border border-[#E8E2D8] shadow-sm bg-white">
+            <img 
+              src="images/srija.webp" 
+              alt="Srija Bhattacharyya" 
+              class="h-full w-full object-cover"
+              onerror="this.src='https://srija-portfolio-eta.vercel.app/images/srija.webp'"
+            />
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-black">
+            Srija Bhattacharyya
+          </h1>
+          <p class="text-base font-semibold text-black">
+            Computer Science Undergraduate &middot; KIIT University &middot; CGPA 9.73 / 10
+          </p>
+          <p class="text-sm text-black">
+            Bhubaneswar, India &middot; Aspiring MS in Computer Science Applicant
+          </p>
+
+          <div class="pt-3 flex flex-wrap items-center gap-3 text-sm font-medium text-black">
+            <a 
+              href="documents/srija-bhattacharyya-resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="text-black hover:underline underline-offset-4"
+            >
+              Curriculum Vitae (PDF) &nearr;
+            </a>
+            <span class="text-neutral-400">&middot;</span>
+            <a href="mailto:srija.bhattacharyya04@gmail.com" class="text-black hover:underline underline-offset-4">
+              Email
+            </a>
+            <span class="text-neutral-400">&middot;</span>
+            <a href="https://www.linkedin.com/in/srija-bhattacharyya-9181352aa/" target="_blank" rel="noreferrer" class="text-black hover:underline underline-offset-4">
+              LinkedIn &nearr;
+            </a>
+            <span class="text-neutral-400">&middot;</span>
+            <a href="https://github.com/srijabhattacharyya" target="_blank" rel="noreferrer" class="text-black hover:underline underline-offset-4">
+              GitHub &nearr;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aristotle Quote & Purpose Narrative -->
+      <div class="clean-card p-7 sm:p-9 space-y-6">
+        
+        <!-- Quote Block -->
+        <blockquote class="border-l-2 border-black pl-4 py-1">
+          <p class="text-lg sm:text-xl italic text-black font-normal leading-relaxed">
+            &ldquo;Knowing yourself is the beginning of all wisdom.&rdquo;
+          </p>
+          <cite class="block mt-1.5 text-xs uppercase tracking-widest text-neutral-600 font-semibold not-italic">
+            &mdash; Aristotle
+          </cite>
+        </blockquote>
+
+        <!-- Personal Narrative: Community Purpose + Broad General AI Drive -->
+        <div class="space-y-4 text-black text-sm sm:text-base leading-relaxed">
+          <p>
+            When I began my undergraduate journey in Computer Science, artificial intelligence felt like an infinite canvas. But taking Aristotle's reflection to heart prompted me to pause and examine what truly drives me. Looking inward helped me uncover two complementary forces that define my work: a clear sense of purpose rooted in community impact, and an intellectual fascination with the fundamental mechanics of General AI.
+          </p>
+          <p>
+            My sense of purpose comes from over ten years of volunteering and community teaching with the Associated Initiative for Mankind (AIM) Foundation. Working with underprivileged children in rural and low-bandwidth environments across West Bengal and Odisha grounded my technical outlook in reality. Technology cannot simply be an abstract exercise; it must solve real human problems, uplift underserved communities, and function reliably when people depend on it.
+          </p>
+          <p>
+            At the same time, my intellectual curiosity spans the core frontiers of General AI. I am deeply captivated by the challenges that stand between current models and truly dependable intelligence:
+          </p>
+          <ul class="list-disc pl-5 space-y-2 text-sm sm:text-base">
+            <li><strong>Hallucination Mitigation & Reliability:</strong> Developing statistical bounds and evaluation metrics so language models provide verifiable, calibrated outputs rather than confident errors.</li>
+            <li><strong>Retrieval-Augmented Generation (RAG):</strong> Engineering multi-hop retrieval pipelines and adaptive context re-ranking that resist retrieval noise and context distraction.</li>
+            <li><strong>Model Alignment:</strong> Ensuring that autonomous systems stay safely bounded and aligned with human values and deterministic operational constraints.</li>
+            <li><strong>Agentic AI & Multi-Agent Orchestration:</strong> Designing multi-agent systems that can plan, self-reflect, decompose complex workflows, and collaborate effectively in real-world environments.</li>
+          </ul>
+          <p>
+            My research trajectory is building towards this intersection: uniting the rigor of General AI research with deployment that genuinely benefits society. I am pursuing an MS in Computer Science in the United States to deepen this work alongside leading research groups.
+          </p>
+        </div>
+      </div>
+
+      <!-- Key Academic Highlights Bar -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 rounded-xl border border-[#E8E2D8] bg-white text-center">
+        <div>
+          <p class="text-xs font-medium text-neutral-600 uppercase tracking-wider">Undergrad GPA</p>
+          <p class="text-2xl font-bold text-black mt-1">9.73 <span class="text-xs font-normal text-neutral-500">/ 10</span></p>
+          <p class="text-xs text-black font-medium mt-0.5">Merit Scholar (Sem 1: 10.0)</p>
+        </div>
+        <div>
+          <p class="text-xs font-medium text-neutral-600 uppercase tracking-wider">High School Merit</p>
+          <p class="text-2xl font-bold text-black mt-1">96.6% <span class="text-xs font-normal text-neutral-500">ICSE</span></p>
+          <p class="text-xs text-black font-medium mt-0.5">95.0% ISC (Modern High)</p>
+        </div>
+        <div>
+          <p class="text-xs font-medium text-neutral-600 uppercase tracking-wider">Research Labs</p>
+          <p class="text-2xl font-bold text-black mt-1">3 Labs</p>
+          <p class="text-xs text-black font-medium mt-0.5">ISI Pune &middot; IIT KGP &middot; KIIT</p>
+        </div>
+        <div>
+          <p class="text-xs font-medium text-neutral-600 uppercase tracking-wider">Community Service</p>
+          <p class="text-2xl font-bold text-black mt-1">10+ Years</p>
+          <p class="text-xs text-black font-medium mt-0.5">AIM Foundation Educator</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- RESEARCH IN PROGRESS -->
+    <section id="research" class="space-y-6 pt-6">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-black">
+          Research in Progress
+        </h2>
+        <p class="text-sm text-neutral-600 mt-1">
+          Working toward peer-reviewed conference publications in AI reliability, statistical evaluation, and agentic workflows.
+        </p>
+      </div>
+
+      <div class="space-y-5">
+        
+        <!-- Paper 1: ISI Pune -->
+        <article class="clean-card p-7 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+            <span class="font-semibold text-black bg-[#FAF8F5] border border-[#E8E2D8] px-2.5 py-0.5 rounded-md">
+              Manuscript in Preparation
+            </span>
+            <span class="text-neutral-600 font-medium">Indian Statistical Institute (ISI) Pune</span>
+          </div>
+
+          <h3 class="text-lg font-bold text-black">
+            A Composite Reliability Metric for LLMs in Industrial Decision-Support Systems
+          </h3>
+
+          <p class="text-sm text-neutral-700">
+            Srija Bhattacharyya, under the guidance of Dr. Subrata Rath (Indian Statistical Institute, Pune)
+          </p>
+
+          <p class="text-sm text-black leading-relaxed">
+            Adapting classical Statistical Process Control (SPC) methods — including Shewhart control charts, Cumulative Sum (CUSUM), Exponentially Weighted Moving Average (EWMA), and process capability indices (Cp, Cpk) — to systematically quantify output drift, bound hallucination propensity, and ensure decision reliability in industrial inspection pipelines.
+          </p>
+
+          <div class="pt-2 flex flex-wrap gap-2 text-xs text-black font-medium">
+            <span class="px-2.5 py-1 rounded-md bg-[#FAF8F5] border border-[#E8E2D8]">Statistical Process Control</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#FAF8F5] border border-[#E8E2D8]">Hallucination Mitigation</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#FAF8F5] border border-[#E8E2D8]">Decision Safety</span>
+          </div>
+        </article>
+
+        <!-- Paper 2: KIIT RespAI Lab -->
+        <article class="clean-card p-7 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+            <span class="font-semibold text-black bg-[#FAF8F5] border border-[#E8E2D8] px-2.5 py-0.5 rounded-md">
+              Benchmark Design &amp; Study
+            </span>
+            <span class="text-neutral-600 font-medium">RespAI Research Lab, KIIT University</span>
+          </div>
+
+          <h3 class="text-lg font-bold text-black">
+            Modified RAG Pipelines for Agentic AI Systems
+          </h3>
+
+          <p class="text-sm text-neutral-700">
+            Srija Bhattacharyya, under the guidance of Dr. Murari Mandal (RespAI Research Lab)
+          </p>
+
+          <p class="text-sm text-black leading-relaxed">
+            Designing evaluation benchmarks and re-ranking heuristics for retrieval-augmented multi-agent systems. Investigating context distraction, multi-hop reasoning decay, and factual stability across iterative agentic execution loops.
+          </p>
+
+          <div class="pt-2 flex flex-wrap gap-2 text-xs text-black font-medium">
+            <span class="px-2.5 py-1 rounded-md bg-[#FAF8F5] border border-[#E8E2D8]">Agentic RAG</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#FAF8F5] border border-[#E8E2D8]">Multi-Agent Orchestration</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#FAF8F5] border border-[#E8E2D8]">Evaluation Benchmarking</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- EXPERIENCE & INTERNSHIPS (ALL 7 INCLUDED SPACIOUSLY) -->
+    <section id="experience" class="space-y-6 pt-6">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-black">
+          Experience &amp; Internships
+        </h2>
+        <p class="text-sm text-neutral-600 mt-1">
+          Seven appointments across academic research labs, applied AI engineering, full-stack systems, and enterprise analytics.
+        </p>
+      </div>
+
+      <div class="space-y-5">
+
+
+        <!-- Research Assistant: RespAI Research Lab -->
+        <article class="clean-card p-7 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div>
+              <span class="text-xs font-bold text-black uppercase tracking-wider">Research Assistant</span>
+              <h3 class="text-lg font-bold text-black mt-0.5">Research Assistant</h3>
+              <p class="text-sm font-semibold text-neutral-800">
+                RespAI Research Lab &middot; KIIT University
+              </p>
+            </div>
+            <span class="text-xs font-medium text-neutral-600">May 2026 &ndash; Present</span>
+          </div>
+
+          <p class="text-sm text-black leading-relaxed pt-1">
+            Working as a Research Assistant on research in Retrieval-Augmented Generation (RAG), Agentic AI, and evaluation of reliable AI systems under the guidance of Dr. Murari Mandal.
+          </p>
+        </article>
+
+        <!-- 1. IIT Kharagpur (Research Intern) -->
+        <article class="clean-card p-7 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div>
+              <span class="text-xs font-bold text-black uppercase tracking-wider">Research Internship</span>
+              <h3 class="text-lg font-bold text-black mt-0.5">Research Intern</h3>
+              <p class="text-sm font-semibold text-neutral-800">
+                IIT Kharagpur &middot; System &amp; Information Lab
+              </p>
+              <p class="text-xs text-neutral-600">
+                Supervisor: Professor Siddhartha Mukhopadhyay
+              </p>
+            </div>
+            <span class="text-xs font-medium text-neutral-600">May 2024 &ndash; Jun 2024</span>
+          </div>
+
+          <ul class="space-y-2 text-sm text-black list-disc pl-5 leading-relaxed pt-1">
+            <li>Gained hands-on experience with hardware interfacing, specifically in Python, embedded C, IMU, and GPS sensors.</li>
+            <li>Worked with Kalman Filters for noise reduction and state estimation, applying Computer Science algorithms to cross-disciplinary sensor integration.</li>
+          </ul>
+
+          <div class="pt-2">
+            <a href="https://drive.google.com/file/d/133nB3duPvzWlUGwGCdkJbsEj4z_JqygX/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-black hover:underline underline-offset-4">
+              View Research Certificate (Google Drive) &nearr;
+            </a>
+          </div>
+        </article>
+
+        <!-- 2. Nexaei Corp -->
+        <article class="clean-card p-7 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div>
+              <span class="text-xs font-bold text-black uppercase tracking-wider">AI Engineering</span>
+              <h3 class="text-lg font-bold text-black mt-0.5">AI Model Development Intern</h3>
+              <p class="text-sm font-semibold text-neutral-800">Nexaei Corp Pvt. Ltd.</p>
+            </div>
+            <span class="text-xs font-medium text-neutral-600">Mar 2026 &ndash; Jun 2026</span>
+          </div>
+
+          <ul class="space-y-2 text-sm text-black list-disc pl-5 leading-relaxed pt-1">
+            <li>Developing an AI model for direct integration into a production web application with full backend configuration.</li>
+            <li>Designing the model–backend interface layer to enable real-time inference via REST API endpoints.</li>
+            <li>Adopting modern ML frameworks and engineering methods to meet production reliability and performance standards.</li>
+          </ul>
+
+          <div class="pt-2">
+            <a href="documents/srija-bhattacharyya-resume.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-black hover:underline underline-offset-4">
+              View Verified Records &nearr;
+            </a>
+          </div>
+        </article>
+
+        <!-- 3. AIM Foundation -->
+        <article class="clean-card p-7 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div>
+              <span class="text-xs font-bold text-black uppercase tracking-wider">Full-Stack &amp; AI Deployment</span>
+              <h3 class="text-lg font-bold text-black mt-0.5">Web Development Intern</h3>
+              <p class="text-sm font-semibold text-neutral-800">Associated Initiative for Mankind (AIM) Foundation</p>
+            </div>
+            <span class="text-xs font-medium text-neutral-600">Aug 2025 &ndash; Present</span>
+          </div>
+
+          <ul class="space-y-2 text-sm text-black list-disc pl-5 leading-relaxed pt-1">
+            <li>Architected a full-stack platform (Next.js + Firebase) serving 1000+ user records for a live NGO (aimindia.org.in).</li>
+            <li>Engineered dedicated portals for mental health support and rural learning for underprivileged children (SoulCircle and VidyaShakti).</li>
+            <li>Built a reusable UI component library reducing redundant code by 45% and integrated NGO donation infrastructure.</li>
+          </ul>
+
+          <div class="pt-2">
+            <a href="documents/aim-foundation-certificate.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-black hover:underline underline-offset-4">
+              View Certificate (PDF) &nearr;
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. PremiumData360 -->
+        <article class="clean-card p-7 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div>
+              <span class="text-xs font-bold text-black uppercase tracking-wider">Document Intelligence</span>
+              <h3 class="text-lg font-bold text-black mt-0.5">AI/ML Intern</h3>
+              <p class="text-sm font-semibold text-neutral-800">PremiumData360 (pd360)</p>
+            </div>
+            <span class="text-xs font-medium text-neutral-600">Dec 2025 &ndash; Dec 2025</span>
+          </div>
+
+          <ul class="space-y-2 text-sm text-black list-disc pl-5 leading-relaxed pt-1">
+            <li>Applied Microsoft Document Intelligence to analyse and process real-life business documents at scale.</li>
+            <li>Developed an AI model for document template classification trained on PremiumData360's proprietary dataset.</li>
+            <li>Worked on Microsoft Azure and gained hands-on experience in cloud ML pipelines.</li>
+          </ul>
+
+          <div class="pt-2">
+            <a href="documents/premiumdata360-certificate.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-black hover:underline underline-offset-4">
+              View Certificate (PDF) &nearr;
+            </a>
+          </div>
+        </article>
+
+        <!-- 5. PricewaterhouseCoopers (PwC) India -->
+        <article class="clean-card p-7 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div>
+              <span class="text-xs font-bold text-black uppercase tracking-wider">Enterprise Analytics</span>
+              <h3 class="text-lg font-bold text-black mt-0.5">Advisory Division Intern</h3>
+              <p class="text-sm font-semibold text-neutral-800">PricewaterhouseCoopers (PwC) India</p>
+            </div>
+            <span class="text-xs font-medium text-neutral-600">May 2025 &ndash; Jul 2025</span>
+          </div>
+
+          <ul class="space-y-2 text-sm text-black list-disc pl-5 leading-relaxed pt-1">
+            <li>Improved Tableau dashboards for an enterprise client using SQL and Python.</li>
+            <li>Optimised Tableau dashboards and underlying data models, improving dashboard refresh efficiency by 10%.</li>
+            <li>Synthesised datasets to generate insights and drive continuous reporting improvements across advisory workflows.</li>
+          </ul>
+
+          <div class="pt-2">
+            <a href="documents/pwc-certificate.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-black hover:underline underline-offset-4">
+              View Certificate (PDF) &nearr;
+            </a>
+          </div>
+        </article>
+
+        <!-- 6. Sunware Technologies -->
+        <article class="clean-card p-7 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div>
+              <span class="text-xs font-bold text-black uppercase tracking-wider">Machine Learning</span>
+              <h3 class="text-lg font-bold text-black mt-0.5">Machine Learning Intern</h3>
+              <p class="text-sm font-semibold text-neutral-800">Sunware Technologies</p>
+            </div>
+            <span class="text-xs font-medium text-neutral-600">Apr 2025 &ndash; May 2025</span>
+          </div>
+
+          <ul class="space-y-2 text-sm text-black list-disc pl-5 leading-relaxed pt-1">
+            <li>Built end-to-end ML pipelines and improved prediction accuracy via systematic feature engineering.</li>
+            <li>Deployed model prototypes as Python REST APIs, enabling real-time inference in production.</li>
+            <li>Worked with time-series data and Long Short-Term Memory (LSTM) recurrent networks.</li>
+          </ul>
+
+          <div class="pt-2">
+            <a href="documents/sunware-technologies-certificate.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-black hover:underline underline-offset-4">
+              View Certificate (PDF) &nearr;
+            </a>
+          </div>
+        </article>
+
+        <!-- 7. Vesuvius India Limited -->
+        <article class="clean-card p-7 space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div>
+              <span class="text-xs font-bold text-black uppercase tracking-wider">Factory Systems &amp; MES</span>
+              <h3 class="text-lg font-bold text-black mt-0.5">MES System Intern</h3>
+              <p class="text-sm font-semibold text-neutral-800">Vesuvius India Limited</p>
+            </div>
+            <span class="text-xs font-medium text-neutral-600">Jun 2024 &ndash; Jun 2024</span>
+          </div>
+
+          <ul class="space-y-2 text-sm text-black list-disc pl-5 leading-relaxed pt-1">
+            <li>Mapped end-to-end Manufacturing Execution System (MES) process flows at Vesuvius's Kolkata factory, identifying workflow bottlenecks.</li>
+            <li>Compiled process documentation reducing manual intervention steps; performance was rated excellent by the HR Director.</li>
+          </ul>
+
+          <div class="pt-2">
+            <a href="documents/vesuvius-certificate.pdf" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-black hover:underline underline-offset-4">
+              View Certificate (PDF) &nearr;
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- SELECTED TECHNICAL PROJECTS (CONNECTED TO REAL GITHUB REPOS) -->
+    <section id="projects" class="space-y-6 pt-6">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-black">
+          Selected Projects
+        </h2>
+        <p class="text-sm text-neutral-600 mt-1">
+          Open-source software, machine learning architectures, and deployed community platforms.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <!-- Project 1: Ecosystem Stability Predictor (EcoSense-ML) -->
+        <div class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Machine Learning</span>
+            <h3 class="text-base font-bold text-black">Ecosystem Stability Predictor (EcoSense-ML)</h3>
+            <p class="text-sm text-black leading-relaxed">
+              Built an XGBoost classifier to predict ecological stability across aquatic and terrestrial ecosystems. Evaluated feature-driven predictions against baseline models, using feature engineering and cross-validation to assess generalisation. Built a Streamlit interface to make model outputs interpretable for non-technical stakeholders (aligned with UN SDGs 13, 14, and 15).
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8] flex items-center justify-between text-xs">
+            <span class="text-neutral-600 font-medium">XGBoost &middot; Scikit-learn &middot; Streamlit</span>
+            <a href="https://github.com/duttaroshni/EcoSense-ML" target="_blank" rel="noreferrer" class="font-bold text-black hover:underline underline-offset-4">
+              GitHub &nearr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: SoulCircle (SoulCircleAdvanced) -->
+        <div class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Conversational AI &amp; Safety Guardrails</span>
+            <h3 class="text-base font-bold text-black">SoulCircle — AI Mental Wellness Copilot</h3>
+            <p class="text-sm text-black leading-relaxed">
+              Engineered a context-aware conversational mental wellness platform featuring sentiment classification, crisis intervention guardrails, and persistent session state. Designed specifically for low-bandwidth cellular environments; deployed live on AIM Foundation's central platform with 1,000+ active users.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8] flex items-center justify-between text-xs">
+            <span class="text-neutral-600 font-medium">Python &middot; FastAPI &middot; Next.js &middot; Supabase</span>
+            <div class="flex items-center gap-3">
+              <a href="https://aimindia.org.in" target="_blank" rel="noreferrer" class="font-bold text-black hover:underline underline-offset-4">
+                Live &nearr;
+              </a>
+              <span class="text-neutral-400">&middot;</span>
+              <a href="https://github.com/srijabhattacharyya/SoulCircleAdvanced" target="_blank" rel="noreferrer" class="font-bold text-black hover:underline underline-offset-4">
+                GitHub &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: ShareBite -->
+        <div class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Mobile Systems &amp; Geo-Matching</span>
+            <h3 class="text-base font-bold text-black">ShareBite — Surplus Food Redistribution</h3>
+            <p class="text-sm text-black leading-relaxed">
+              Team-built Android application connecting banquet and event donors with local NGOs to coordinate surplus food redistribution in real time. Implemented live donor–NGO notifications and geo-matching with a low-friction onboarding flow.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8] flex items-center justify-between text-xs">
+            <span class="text-neutral-600 font-medium">Kotlin &middot; Firebase &middot; Android Studio</span>
+            <a href="https://github.com/srijabhattacharyya/ShareBite" target="_blank" rel="noreferrer" class="font-bold text-black hover:underline underline-offset-4">
+              GitHub &nearr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: VidyaShakti -->
+        <div class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Multilingual NLP &amp; EdTech</span>
+            <h3 class="text-base font-bold text-black">VidyaShakti — Multilingual Pedagogical Assistant</h3>
+            <p class="text-sm text-black leading-relaxed">
+              Built a multilingual AI learning assistant that handled 100+ interactions for underprivileged children with rural network access. Includes study materials for Classes III–XII and in-built quizzes, integrated into AIM Foundation's platform for live deployment.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8] flex items-center justify-between text-xs">
+            <span class="text-neutral-600 font-medium">TypeScript &middot; Next.js &middot; Firebase</span>
+            <div class="flex items-center gap-3">
+              <a href="https://aimindia.org.in" target="_blank" rel="noreferrer" class="font-bold text-black hover:underline underline-offset-4">
+                Live &nearr;
+              </a>
+              <span class="text-neutral-400">&middot;</span>
+              <a href="https://github.com/srijabhattacharyya/vidya-shakti" target="_blank" rel="noreferrer" class="font-bold text-black hover:underline underline-offset-4">
+                GitHub &nearr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="space-y-6 pt-6">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-black">
+          Education
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div class="clean-card p-6 space-y-2.5">
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="font-bold text-black text-base">B.Tech, Computer Science &amp; Engineering</h3>
+              <p class="text-sm font-semibold text-neutral-800">KIIT University, Bhubaneswar</p>
+            </div>
+            <span class="text-xs font-medium text-neutral-600">2023 &ndash; Present</span>
+          </div>
+          <ul class="text-sm text-black space-y-1.5 list-disc pl-5 pt-1">
+            <li><strong>CGPA: 9.73 / 10.0</strong></li>
+            <li>Merit Scholarship awarded for achieving a perfect 10.0 SGPA in Semester 1.</li>
+            <li>Elected Google Developer Groups (GDG) Chapter Lead.</li>
+          </ul>
+        </div>
+
+        <div class="clean-card p-6 space-y-2.5">
+          <div class="flex items-start justify-between">
+            <div>
+              <h3 class="font-bold text-black text-base">Modern High School for Girls</h3>
+              <p class="text-sm font-semibold text-neutral-800">Kolkata, West Bengal</p>
+            </div>
+            <span class="text-xs font-medium text-neutral-600">ICSE &amp; ISC</span>
+          </div>
+          <ul class="text-sm text-black space-y-1.5 list-disc pl-5 pt-1">
+            <li><strong>ICSE (Class X): 96.6%</strong></li>
+            <li><strong>ISC (Class XII): 95.0%</strong></li>
+            <li>Long-term involvement in science clubs and community educational outreach.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- COURSES & CERTIFICATIONS -->
+    <section id="courses" class="space-y-6 pt-6">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-black">
+          Courses &amp; Certifications
+        </h2>
+        <p class="text-sm text-neutral-600 mt-1">
+          Selected professional coursework in cloud infrastructure, site reliability, and generative AI.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+        <article class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Google Cloud</span>
+            <h3 class="text-base font-bold text-black">Developing a Google SRE Culture</h3>
+            <p class="text-sm text-neutral-700">Authorized by Google Cloud &middot; Coursera</p>
+            <p class="text-xs text-neutral-600">Completed June 2026</p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8]">
+            <a href="https://coursera.org/verify/ZSHUER1N5LGJ" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-black hover:underline underline-offset-4">Verify Certificate &nearr;</a>
+          </div>
+        </article>
+
+        <article class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Generative AI</span>
+            <h3 class="text-base font-bold text-black">Generative AI: Introduction and Applications</h3>
+            <p class="text-sm text-neutral-700">Authorized by IBM &middot; Coursera</p>
+            <p class="text-xs text-neutral-600">Completed August 2026</p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8]">
+            <a href="https://coursera.org/verify/UL1SD01ZEQMH" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-black hover:underline underline-offset-4">Verify Certificate &nearr;</a>
+          </div>
+        </article>
+
+        <article class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Generative AI</span>
+            <h3 class="text-base font-bold text-black">Generative AI: Prompt Engineering Basics</h3>
+            <p class="text-sm text-neutral-700">Authorized by IBM &middot; Coursera</p>
+            <p class="text-xs text-neutral-600">Completed August 2026</p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8]">
+            <a href="https://coursera.org/verify/S931HKYU9TOL" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-black hover:underline underline-offset-4">Verify Certificate &nearr;</a>
+          </div>
+        </article>
+
+        <article class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Google Cloud</span>
+            <h3 class="text-base font-bold text-black">Getting Started with Google Kubernetes Engine</h3>
+            <p class="text-sm text-neutral-700">Authorized by Google Cloud &middot; Coursera</p>
+            <p class="text-xs text-neutral-600">Completed June 2026</p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8]">
+            <a href="https://coursera.org/verify/5JC8ZBFCDY3B" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-black hover:underline underline-offset-4">Verify Certificate &nearr;</a>
+          </div>
+        </article>
+
+        <article class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Google Cloud</span>
+            <h3 class="text-base font-bold text-black">Google Cloud Fundamentals: Core Infrastructure</h3>
+            <p class="text-sm text-neutral-700">Authorized by Google Cloud &middot; Coursera</p>
+            <p class="text-xs text-neutral-600">Completed June 2026</p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8]">
+            <a href="https://coursera.org/verify/DWTYP9U0EX61" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-black hover:underline underline-offset-4">Verify Certificate &nearr;</a>
+          </div>
+        </article>
+
+        <article class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Google Cloud</span>
+            <h3 class="text-base font-bold text-black">Logging and Monitoring in Google Cloud</h3>
+            <p class="text-sm text-neutral-700">Authorized by Google Cloud &middot; Coursera</p>
+            <p class="text-xs text-neutral-600">Completed June 2026</p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8]">
+            <a href="https://coursera.org/verify/JTOYKLILOO05" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-black hover:underline underline-offset-4">Verify Certificate &nearr;</a>
+          </div>
+        </article>
+
+        <article class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Prompt Engineering</span>
+            <h3 class="text-base font-bold text-black">Prompt Engineering for ChatGPT</h3>
+            <p class="text-sm text-neutral-700">Authorized by Vanderbilt University &middot; Coursera</p>
+            <p class="text-xs text-neutral-600">Completed August 2026</p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8]">
+            <a href="https://coursera.org/verify/R7BTC5A4RGC2" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-black hover:underline underline-offset-4">Verify Certificate &nearr;</a>
+          </div>
+        </article>
+
+        <article class="clean-card p-6 flex flex-col justify-between space-y-4">
+          <div class="space-y-2.5">
+            <span class="text-xs font-bold text-black uppercase tracking-wider">Google Cloud</span>
+            <h3 class="text-base font-bold text-black">Reliable Google Cloud Infrastructure: Design and Process</h3>
+            <p class="text-sm text-neutral-700">Authorized by Google Cloud &middot; Coursera</p>
+            <p class="text-xs text-neutral-600">Completed June 2026</p>
+          </div>
+          <div class="pt-3 border-t border-[#E8E2D8]">
+            <a href="https://coursera.org/verify/KDSD0CCG4HM4" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-black hover:underline underline-offset-4">Verify Certificate &nearr;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- LEADERSHIP, AWARDS & SERVICE -->
+    <section class="space-y-6 pt-6">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-black">
+          Leadership, Honors &amp; Teaching &amp; Community Service
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        
+        <div class="clean-card p-6 space-y-3">
+          <span class="text-xs font-bold text-black uppercase tracking-wider">Campus Leadership</span>
+          <h3 class="text-base font-bold text-black">Google Developer Groups (GDG) KIIT</h3>
+          <p class="text-xs text-neutral-600 font-medium">Chapter Lead &amp; On-Campus Organiser &middot; Aug 2025 &ndash; Present</p>
+          <ul class="text-sm text-black list-disc pl-5 space-y-1.5 leading-relaxed">
+            <li>Organised campus tech events with 500+ attendees, including <em>"Breaking an LLM"</em>—the chapter's largest event to date.</li>
+            <li>Ran foundational AI sessions for first- and second-year students and facilitated Google Cloud Study Jams.</li>
+          </ul>
+        </div>
+
+        <div class="clean-card p-6 space-y-3">
+          <span class="text-xs font-bold text-black uppercase tracking-wider">Teaching &amp; Community Education</span>
+          <h3 class="text-base font-bold text-black">Volunteer Educator &middot; AIM Foundation</h3>
+          <p class="text-xs text-neutral-600 font-medium">Community Educator &amp; Volunteer &middot; Since Class 7</p>
+          <ul class="text-sm text-black list-disc pl-5 space-y-1.5 leading-relaxed">
+            <li>Conducted digital literacy and fundamental education workshops for over 150+ students in underprivileged areas.</li>
+            <li>Organised social, environmental, and educational outreach programs across eastern India.</li>
+          </ul>
+        </div>
+
+        <div class="clean-card p-6 space-y-3">
+          <span class="text-xs font-bold text-black uppercase tracking-wider">Conference Service</span>
+          <h3 class="text-base font-bold text-black">ICDCIT 2026 Organising Committee</h3>
+          <p class="text-xs text-neutral-600 font-medium">School of Computer Engineering, KIIT &middot; Aug 2025 &ndash; Jan 2026</p>
+          <p class="text-sm text-black leading-relaxed">
+            Served on the organizing committee for the International Conference on Distributed Computing and Intelligent Technology.
+          </p>
+        </div>
+
+        <div class="clean-card p-6 space-y-3">
+          <span class="text-xs font-bold text-black uppercase tracking-wider">National Distinction</span>
+          <h3 class="text-base font-bold text-black">Top 5 Finalist &middot; IIT Kharagpur YIP</h3>
+          <p class="text-xs text-neutral-600 font-medium">Young Innovators Project &middot; National Challenge</p>
+          <p class="text-sm text-black leading-relaxed">
+            Ranked among the Top 5 national teams in a highly competitive science and technology innovation challenge at IIT Kharagpur.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="space-y-6 pt-6">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-black">
+          Technical Skills
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+        <div class="clean-card p-5 space-y-1.5">
+          <p class="text-xs font-bold text-black uppercase tracking-wider">Languages</p>
+          <p class="text-black leading-relaxed">Python, Java, C, JavaScript, SQL, Kotlin</p>
+        </div>
+        <div class="clean-card p-5 space-y-1.5">
+          <p class="text-xs font-bold text-black uppercase tracking-wider">AI &amp; Machine Learning</p>
+          <p class="text-black leading-relaxed">PyTorch, Keras, Pandas, NumPy, OpenCV, Scikit-learn, XGBoost, LLMs, Transformers, RAG</p>
+        </div>
+        <div class="clean-card p-5 space-y-1.5">
+          <p class="text-xs font-bold text-black uppercase tracking-wider">Web &amp; Frameworks</p>
+          <p class="text-black leading-relaxed">Next.js, React, Tailwind CSS, HTML, REST APIs</p>
+        </div>
+        <div class="clean-card p-5 space-y-1.5">
+          <p class="text-xs font-bold text-black uppercase tracking-wider">Backend &amp; Databases</p>
+          <p class="text-black leading-relaxed">Firebase, Supabase, SQL, NoSQL, REST Endpoints</p>
+        </div>
+        <div class="clean-card p-5 space-y-1.5">
+          <p class="text-xs font-bold text-black uppercase tracking-wider">Cloud &amp; Analytics Tools</p>
+          <p class="text-black leading-relaxed">AWS (EC2, S3), Azure, Git, Tableau, Power BI</p>
+        </div>
+        <div class="clean-card p-5 space-y-1.5">
+          <p class="text-xs font-bold text-black uppercase tracking-wider">Spoken Languages</p>
+          <p class="text-black leading-relaxed">English, Bengali, Hindi, German (A1)</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT & INQUIRIES (NO GOOGLE SCHOLAR) -->
+    <section id="contact" class="space-y-6 pt-6 pb-12">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-black">
+          Contact
+        </h2>
+        <p class="text-sm text-neutral-600 mt-1">
+          Open to research discussions, graduate school conversations, and collaborations.
+        </p>
+      </div>
+
+      <div class="clean-card p-7 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="space-y-1">
+          <p class="text-xs font-bold text-neutral-600 uppercase tracking-wider">Email Address</p>
+          <a href="mailto:srija.bhattacharyya04@gmail.com" class="text-base sm:text-lg font-bold text-black hover:underline underline-offset-4">
+            srija.bhattacharyya04@gmail.com
+          </a>
+          <p class="text-xs text-neutral-600 pt-1">
+            KIIT University &middot; School of Computer Engineering
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a 
+            href="documents/srija-bhattacharyya-resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="px-4 py-2.5 rounded-lg bg-black hover:bg-neutral-800 text-white text-xs sm:text-sm font-semibold transition"
+          >
+            Download CV (PDF) &nearr;
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/srija-bhattacharyya-9181352aa/" 
+            target="_blank" 
+            rel="noreferrer" 
+            class="px-4 py-2.5 rounded-lg border border-[#E8E2D8] hover:border-black text-black text-xs sm:text-sm font-medium transition"
+          >
+            LinkedIn
+          </a>
+          <a 
+            href="https://github.com/srijabhattacharyya" 
+            target="_blank" 
+            rel="noreferrer" 
+            class="px-4 py-2.5 rounded-lg border border-[#E8E2D8] hover:border-black text-black text-xs sm:text-sm font-medium transition"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Quiet, Single-Line Footer -->
+  <footer class="border-t border-[#E8E2D8] py-8 text-center text-xs text-neutral-600">
+    <p>&copy; 2026 Srija Bhattacharyya &middot; Academic Portfolio</p>
+  </footer>
+
+</body>
+</html>
